@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+		<h1>Welcome to Mempy</h1>
+			<p>
+				We are Mempy, the Memphis Python User Group.
+			</p>
+			<p>
+				This group is for anyone interested in learning about Python, sharing their knowledge, and connecting with other Python enthusiasts in the Memphis area. We welcome all skill levels, from beginners to experts. Whether you're just starting out or have been coding for years, there's a place for you in our community.
+			</p>
+			<p>We meet on the 3rd (or 4th) Monday of each month at 6:00 Central US time.  Currently all meetings are virtual via Microsoft Teams.</p>
+			
+		</main>
+		<Footer />
+	</body>
+</html>
